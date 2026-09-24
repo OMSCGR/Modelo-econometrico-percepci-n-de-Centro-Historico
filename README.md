@@ -1,0 +1,1 @@
+- 📈 ¿Qué explica la mejora en la percepción de inseguridad? Modelo logit y descomposición 2024-2026: https://omscgr.github.io/Modelo-econometrico-percepci-n-de-Centro-Historico/
