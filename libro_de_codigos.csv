@@ -1,0 +1,20 @@
+﻿variable,etiqueta,valores,pregunta_origen,notas
+id,Identificador anonimizado de la persona encuestada,CHQ24_0001 ...,—,Sin vínculo con el número de cuestionario original
+anio,Ola de la encuesta,2024; 2025; 2026,Fecha / Año,2024 = agosto 2024; 2025 = agosto 2025; 2026 = tercer trimestre 2026. Excluida la ola de febrero 2025
+tipo_actor,Tipo de persona usuaria del espacio público,flotante; locales; autonomo,Marco muestral,flotante = población flotante; locales = locales comerciales; autonomo = comercio autónomo regularizado
+inseguro,"Percepción de inseguridad en el sector, últimos 12 meses",1 = inseguro/muy inseguro; 0 = seguro/muy seguro,PSC.1 (escala de 4 puntos),Variable dependiente
+victima,"Víctima de algún delito en el sector, últimos 12 meses",1 = sí; 0 = no,VI.1,
+vio_ffaa,Vio trabajar a las Fuerzas Armadas en el sector,1 = sí; 0 = no,Bloque SSM (Fuerzas Armadas del Ecuador),
+vio_policia,Vio trabajar a la Policía Nacional en el sector,1 = sí; 0 = no,Bloque SSM (Policía Nacional),
+vio_cacmq,Vio trabajar al Cuerpo de Agentes de Control Metropolitano (CACMQ),1 = sí; 0 = no,Bloque SSM (CACMQ),
+cc_peleas,Presenció peleas o riñas en el espacio público,1 = sí; 0 = no,CC.1,
+cc_situacion_calle,Presenció personas en situación de calle (mendicidad),1 = sí; 0 = no,CC.2,
+cc_alcohol,Presenció consumo de alcohol en el espacio público,1 = sí; 0 = no,CC.3,
+cc_drogas,Presenció consumo de drogas en el espacio público,1 = sí; 0 = no,CC.4,
+cc_danio_propiedad,Presenció daño a la propiedad pública o privada,1 = sí; 0 = no,CC.5,
+cc_fauna_urbana,Presenció fauna urbana (animales sin hogar),1 = sí; 0 = no,CC.6,
+cc_basura,Presenció basura en los espacios públicos,1 = sí; 0 = no,CC.7,
+cc_ruido,Presenció ruidos molestos,1 = sí; 0 = no,CC.8,
+cc_aglomeracion,Presenció aglomeración de personas,1 = sí; 0 = no,CC.9,
+ferias,Presenció ferias gastronómicas o culturales en el sector,1 = sí; 0 = no,CC.13 (2024) / pregunta de ferias (2025-2026),
+hombre,Sexo de la persona encuestada,1 = hombre; 0 = mujer,DD.1,
