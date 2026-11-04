@@ -1,0 +1,20 @@
+﻿variable	etiqueta	valores	pregunta_origen	notas
+id	Identificador anonimizado de la persona encuestada	CHQ24_0001 ...	—	Sin vínculo con el número de cuestionario original
+anio	Ola de la encuesta	2024; 2025; 2026	Año	2024 = agosto 2024; 2025 = agosto 2025; 2026 = tercer trimestre 2026. Excluida la ola de febrero 2025
+tipo_actor	Tipo de persona usuaria del espacio público	flotante; locales; autonomo	Tipo	flotante = población flotante; locales = locales comerciales; autonomo = comercio autónomo regularizado
+inseguro	"Percepción de inseguridad en el sector, últimos 12 meses"	1 = Inseguro/Muy inseguro; 0 = Seguro/Muy seguro	"PSC.1 En los últimos 12 meses, es decir, de agosto 2024 a la fecha. En una escala de 1 al 4 donde 1 es MUY "	Variable dependiente
+victima	"Víctima de algún delito en el sector, últimos 12 meses"	1 = Si; 0 = No	"VI.1 En los últimos 12 meses (es decir, de agosto - a la fecha). Ud. Ha sido víctima de algún tipo de delito en este sector?"	
+vio_ffaa	Vio trabajar a las Fuerzas Armadas en el sector	1 = Si; 0 = No	SSM.8 Fuerzas Armadas del Ecuador (FFAA) - Defensa de la soberanía e integridad territorial del país.	
+vio_policia	Vio trabajar a la Policía Nacional en el sector	1 = Si; 0 = No	SSM.7 Policía Nacional (PN) - Garantizar el orden público y la protección de la ciudadania.	
+vio_cacmq	Vio trabajar al Cuerpo de Agentes de Control Metropolitano (CACMQ)	1 = Si; 0 = No	SSM.3 Cuerpo de Agentes de Control Metropolitano de Quito (CACMQ) - Mantener el orden y la seguridad.	
+cc_peleas	Presenció peleas o riñas en el espacio público	1 = Si; 0 = No	CC.1 Peleas o riñas en el espacio público?	
+cc_situacion_calle	Presenció personas en situación de calle (mendicidad)	1 = Si; 0 = No	CC.2 Personas o habitantes en situación de calle (mendicidad) en el espacio público?	
+cc_alcohol	Presenció consumo de alcohol en el espacio público	1 = Si; 0 = No	CC.3 Consumo de alcohol en el espacio público?	
+cc_drogas	Presenció consumo de drogas en el espacio público	1 = Si; 0 = No	CC.4 Consumo de drogas en el espacio público?	
+cc_danio_propiedad	Presenció daño a la propiedad pública o privada	1 = Si; 0 = No	CC.5 Daño a la propiedad pública y privada?	
+cc_fauna_urbana	Presenció fauna urbana (animales sin hogar)	1 = Si; 0 = No	CC.6 Fauna Urbana? (animales sin hogar)?	
+cc_basura	Presenció basura en los espacios públicos	1 = Si; 0 = No	CC.7 Basura en los espacios públicos?	
+cc_ruido	Presenció ruidos molestos	1 = Si; 0 = No	CC.8 Ruidos molestos?	
+cc_aglomeracion	Presenció aglomeración de personas	1 = Si; 0 = No	CC.9 Aglomeración de personas?	
+ferias	Presenció ferias gastronómicas o culturales en el sector	1 = Si; 0 = No	"CC.13 En los últimos 12 meses, es decir, de agosto - a la fecha. ¿Usted ha presenciado en este sector las ferias gastronómicas, culturales? "	
+hombre	Sexo de la persona encuestada	1 = Hombre; 0 = Mujer	DD. 1 Sexo	
