@@ -227,143 +227,28 @@ body { background:var(--bg); color-scheme: light; }
 </div></div>
 
 <div class="wrap kpi-grid">
-<div class="kpi"><div class="num">12,4 p.p.</div><div class="lab">Brecha total en percepción insegura, 2024→2026 (65,9% → 53,5%)</div></div><div class="kpi"><div class="num">~25%</div><div class="lab">De la mejora se explica por cambios en composición (menos exposición a fenómenos de convivencia)</div></div><div class="kpi"><div class="num">~75%</div><div class="lab">No se explica por composición: cambió la relación entre condiciones y percepción</div></div><div class="kpi"><div class="num">+21,3 p.p.</div><div class="lab">Efecto marginal más fuerte: personas en situación de calle</div></div>
+<div class="kpi"><div class="num">12,5 p.p.</div><div class="lab">Brecha en percepción insegura, 2024→2026 (65,9% → 53,4%, muestra analítica)</div></div><div class="kpi"><div class="num">23%–25%</div><div class="lab">De la mejora se explica por cambios en las condiciones medidas (estimación imprecisa)</div></div><div class="kpi"><div class="num">75%–77%</div><div class="lab">No se explica por esas condiciones: cambió la relación entre entorno y percepción</div></div><div class="kpi"><div class="num">+21,1 p.p.</div><div class="lab">Efecto marginal más fuerte: personas en situación de calle</div></div>
 </div>
 
-<section id="lectura-general" class="section"><div class="section-header"><h2>1. Lectura general</h2><div class="section-lead">Qué explica la mejora en la percepción de inseguridad del Centro Histórico entre 2024 y 2026: un modelo estadístico de los factores asociados, y una descomposición de cuánto de la mejora se debe a mejores condiciones objetivas y cuánto a otros factores.</div></div><div class="idea-grid"><div class="idea"><h3>Los datos</h3><ul><li>Panel individual armonizado: <b>766</b> encuestas de 2024 y <b>841</b> de 2026, de los tres actores del Centro Histórico (población flotante, locales comerciales, comercio autónomo).</li><li>Se usan solo las variables que existen de forma comparable en ambas olas: sexo, victimización, los 9 fenómenos de convivencia (CC.1-9), haber presenciado ferias, presencia percibida de tres instituciones de seguridad (Cuerpo de Agentes de Control Metropolitano -CACMQ-, Policía Nacional y Fuerzas Armadas), y tipo de actor. Quedan fuera edad, cambios de hábito, control del comercio informal y brigadas de seguridad, por no existir (o no ser comparables) en la ola 2024.</li></ul></div><div class="idea"><h3>El modelo</h3><ul><li>Regresión logística de 'percibe el sector inseguro o muy inseguro', con errores estándar robustos (HC1).</li><li>Ajuste del modelo: pseudo-R² de 0,143. Se estima un modelo conjunto (con año) y un modelo separado por cada ola, para la descomposición.</li></ul></div><div class="idea"><h3>La descomposición</h3><ul><li>Descomposición Oaxaca-Blinder no lineal (tipo Fairlie): separa la brecha 2024→2026 en la parte explicada por cambios en las variables medidas, y la parte no explicada (cambios en cómo esas condiciones se traducen en percepción).</li><li>Se reporta con las dos referencias posibles (coeficientes de 2024 o de 2026), un chequeo estándar de robustez ante el llamado 'problema del número índice'.</li></ul></div></div></section>
-<section id="modelo" class="section"><div class="section-header"><h2>2. Qué incide en la percepción de inseguridad</h2><div class="section-lead">Efectos marginales promedio del modelo logit agrupado (2024+2026): cuántos puntos porcentuales cambia la probabilidad de sentirse inseguro/a por cada factor, mantenido todo lo demás constante.</div></div><div class="chart-card">
+<section id="lectura-general" class="section"><div class="section-header"><h2>1. Lectura general</h2><div class="section-lead">Qué explica la mejora en la percepción de inseguridad del Centro Histórico entre 2024 y 2026: un modelo estadístico de los factores asociados y una descomposición de cuánto de la mejora se debe a cambios en las condiciones medidas y cuánto a otros factores.</div></div><div class="idea-grid"><div class="idea"><h3>Los datos</h3><ul><li>Tres olas del Estudio de Victimización y Percepción de Seguridad Ciudadana (EVPSC): <b>818</b> encuestas en 2024, <b>775</b> en 2025 y <b>856</b> en 2026, de los tres actores del Centro Histórico (población flotante, locales comerciales, comercio autónomo).</li><li>El modelo compara 2024 y 2026 con información completa en todas las covariables: <b>766</b> y <b>842</b> encuestas (1.608 en total; 66 exclusiones por respuestas «no sabe/no contesta» o vacías).</li><li>Se usan solo las variables comparables entre olas: sexo, victimización, los 9 fenómenos de convivencia (CC.1-9), ferias, presencia percibida del Cuerpo de Agentes de Control Metropolitano (CACMQ), la Policía Nacional y las Fuerzas Armadas, y tipo de actor.</li></ul></div><div class="idea"><h3>El modelo</h3><ul><li>Regresión logística de «percibe el sector inseguro o muy inseguro», con errores estándar robustos (HC1).</li><li>Ajuste del modelo: pseudo-R² de 0,137. Se estima un modelo conjunto (con indicador de año) y un modelo separado por ola para la descomposición.</li></ul></div><div class="idea"><h3>La descomposición</h3><ul><li>Descomposición Oaxaca-Blinder no lineal (Fairlie): separa la brecha 2024→2026 en la parte explicada por cambios en las variables medidas y la parte no explicada (cambios en cómo esas condiciones se traducen en percepción).</li><li>Se reporta con las dos referencias posibles (coeficientes de 2024 o de 2026) y con intervalos bootstrap de 300 réplicas.</li></ul></div></div>
+<div class="table-wrap" style="margin-top:22px;"><h4>Percepción de inseguridad y victimización por actor, 2024 → 2025 → 2026 (total de encuestas)</h4><div id="tabla-trayectorias"></div></div>
+<div class="callout" style="margin-top:18px;">La mejora agregada descansa sobre todo en la población comerciante: los <b>locales comerciales</b> reducen la inseguridad percibida en 17,7 p.p. y su victimización de 50,0% a 37,0%; el <b>comercio autónomo</b> logra la mayor mejora (23,4 p.p.) aunque su victimización repuntó a 45,8% en 2026. En la <b>población flotante</b> la victimización subió de 16,1% a 26,0% en el último año y su percepción empeoró levemente (51,5% → 53,6%). En el total, la victimización vuelve en 2026 casi a su punto de partida (33,4% → 27,6% → 32,9%).</div></section>
+<section id="modelo" class="section"><div class="section-header"><h2>2. Qué incide en la percepción de inseguridad</h2><div class="section-lead">Efectos marginales promedio del modelo logit agrupado (2024+2026): cuántos puntos porcentuales cambia la probabilidad de sentirse inseguro/a por cada factor, manteniendo todo lo demás constante.</div></div><div class="chart-card">
         <div class="chart-title">Efecto marginal sobre la probabilidad de sentirse inseguro/a</div>
         <div class="chart-subtitle">Naranja = aumenta la inseguridad percibida · Celeste = la reduce · (n.s.) = no significativo al 5%</div>
-        <div class="bar-chart">
-<div class="bar-row">
-          <div class="bar-label">Ser hombre (vs. mujer)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:12.48218157289548%;background:var(--cyan);"></div></div>
-          <div class="bar-value">-12,5 p.p.</div>
-          <div class="bar-pct">p=0,000</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Vio trabajar a la Policía Nacional</div>
-          <div class="bar-track"><div class="bar-fill" style="width:9.748818799243237%;background:var(--cyan);"></div></div>
-          <div class="bar-value">-9,7 p.p.</div>
-          <div class="bar-pct">p=0,002</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Año 2026 (vs. 2024, a igual composición)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:9.2629680657994%;background:var(--cyan);"></div></div>
-          <div class="bar-value">-9,3 p.p.</div>
-          <div class="bar-pct">p=0,000</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Vio trabajar al Cuerpo de Agentes de Control Metropolitano (CACMQ)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:7.704554967492785%;background:var(--cyan);"></div></div>
-          <div class="bar-value">-7,7 p.p.</div>
-          <div class="bar-pct">p=0,039</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Aglomeración de personas</div>
-          <div class="bar-track"><div class="bar-fill" style="width:5.950725323510145%;background:var(--cyan);"></div></div>
-          <div class="bar-value">-6,0 p.p.</div>
-          <div class="bar-pct">p=0,021</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Haber presenciado ferias gastronómicas/culturales (n.s.)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:2.710698506400297%;background:var(--cyan);"></div></div>
-          <div class="bar-value">-2,7 p.p.</div>
-          <div class="bar-pct">p=0,302</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Daño a la propiedad pública/privada (n.s.)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:2%;background:var(--orange);"></div></div>
-          <div class="bar-value">0,4 p.p.</div>
-          <div class="bar-pct">p=0,869</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Vio trabajar a las Fuerzas Armadas (n.s.)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:2.013403163639807%;background:var(--orange);"></div></div>
-          <div class="bar-value">2,0 p.p.</div>
-          <div class="bar-pct">p=0,441</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Basura en los espacios públicos (n.s.)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:2.2826014269288097%;background:var(--orange);"></div></div>
-          <div class="bar-value">2,3 p.p.</div>
-          <div class="bar-pct">p=0,363</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Fauna urbana (animales sin hogar) (n.s.)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:3.8565524645541056%;background:var(--orange);"></div></div>
-          <div class="bar-value">3,9 p.p.</div>
-          <div class="bar-pct">p=0,124</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Ruidos molestos (n.s.)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:4.588890898790886%;background:var(--orange);"></div></div>
-          <div class="bar-value">4,6 p.p.</div>
-          <div class="bar-pct">p=0,061</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Ser local comercial (vs. comercio autónomo) (n.s.)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:5.169969913095374%;background:var(--orange);"></div></div>
-          <div class="bar-value">5,2 p.p.</div>
-          <div class="bar-pct">p=0,207</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Consumo de alcohol en el espacio público</div>
-          <div class="bar-track"><div class="bar-fill" style="width:7.777907498388474%;background:var(--orange);"></div></div>
-          <div class="bar-value">7,8 p.p.</div>
-          <div class="bar-pct">p=0,008</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Peleas o riñas en el espacio público</div>
-          <div class="bar-track"><div class="bar-fill" style="width:8.270297891369879%;background:var(--orange);"></div></div>
-          <div class="bar-value">8,3 p.p.</div>
-          <div class="bar-pct">p=0,002</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Ser población flotante (vs. comercio autónomo)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:8.673556990043265%;background:var(--orange);"></div></div>
-          <div class="bar-value">8,7 p.p.</div>
-          <div class="bar-pct">p=0,035</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Consumo de drogas en el espacio público</div>
-          <div class="bar-track"><div class="bar-fill" style="width:9.04495025342366%;background:var(--orange);"></div></div>
-          <div class="bar-value">9,0 p.p.</div>
-          <div class="bar-pct">p=0,001</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Haber sido víctima de un delito</div>
-          <div class="bar-track"><div class="bar-fill" style="width:18.486007146574497%;background:var(--orange);"></div></div>
-          <div class="bar-value">18,5 p.p.</div>
-          <div class="bar-pct">p=0,000</div>
-        </div><div class="bar-row">
-          <div class="bar-label">Personas en situación de calle</div>
-          <div class="bar-track"><div class="bar-fill" style="width:21.338116353521684%;background:var(--orange);"></div></div>
-          <div class="bar-value">21,3 p.p.</div>
-          <div class="bar-pct">p=0,000</div>
-        </div>
-        </div>
-      </div><div class="callout">Los dos factores con mayor efecto son <b>personas en situación de calle</b> (21,3 p.p.) y <b>haber sido víctima de un delito</b> (18,5 p.p.) — el primero incluso por encima de la victimización directa. Entre las instituciones, ver trabajar a la <b>Policía Nacional</b> reduce la inseguridad percibida en 9,7 p.p. y al <b>CACMQ</b> en 7,7 p.p.; la presencia de <b>Fuerzas Armadas</b> no tiene un efecto significativo. Ser hombre reduce la probabilidad en 12,5 p.p. frente a ser mujer. La aglomeración de personas es el único fenómeno de convivencia que <b>reduce</b> la inseguridad percibida (-6,0 p.p.): más gente en el espacio público se asocia a más, no menos, sensación de seguridad.</div><div class="table-wrap">
-        <h4>Tabla completa de efectos marginales (modelo agrupado)</h4>
-        <table><thead><tr><th>Variable</th><th>Efecto marginal</th><th>Error estándar</th><th>Valor p</th><th>Significativo (5%)</th></tr></thead><tbody><tr><td>Personas en situación de calle</td><td>21,3 p.p.</td><td>3,92</td><td>0,000</td><td>Sí</td></tr><tr><td>Haber sido víctima de un delito</td><td>18,5 p.p.</td><td>2,55</td><td>0,000</td><td>Sí</td></tr><tr><td>Ser hombre (vs. mujer)</td><td>-12,5 p.p.</td><td>2,18</td><td>0,000</td><td>Sí</td></tr><tr><td>Vio trabajar a la Policía Nacional</td><td>-9,7 p.p.</td><td>3,16</td><td>0,002</td><td>Sí</td></tr><tr><td>Año 2026 (vs. 2024, a igual composición)</td><td>-9,3 p.p.</td><td>2,35</td><td>0,000</td><td>Sí</td></tr><tr><td>Consumo de drogas en el espacio público</td><td>9,0 p.p.</td><td>2,67</td><td>0,001</td><td>Sí</td></tr><tr><td>Ser población flotante (vs. comercio autónomo)</td><td>8,7 p.p.</td><td>4,10</td><td>0,035</td><td>Sí</td></tr><tr><td>Peleas o riñas en el espacio público</td><td>8,3 p.p.</td><td>2,70</td><td>0,002</td><td>Sí</td></tr><tr><td>Consumo de alcohol en el espacio público</td><td>7,8 p.p.</td><td>2,92</td><td>0,008</td><td>Sí</td></tr><tr><td>Vio trabajar al Cuerpo de Agentes de Control Metropolitano (CACMQ)</td><td>-7,7 p.p.</td><td>3,72</td><td>0,039</td><td>Sí</td></tr><tr><td>Aglomeración de personas</td><td>-6,0 p.p.</td><td>2,59</td><td>0,021</td><td>Sí</td></tr><tr><td>Ser local comercial (vs. comercio autónomo)</td><td>5,2 p.p.</td><td>4,09</td><td>0,207</td><td>No</td></tr><tr><td>Ruidos molestos</td><td>4,6 p.p.</td><td>2,45</td><td>0,061</td><td>No</td></tr><tr><td>Fauna urbana (animales sin hogar)</td><td>3,9 p.p.</td><td>2,50</td><td>0,124</td><td>No</td></tr><tr><td>Haber presenciado ferias gastronómicas/culturales</td><td>-2,7 p.p.</td><td>2,62</td><td>0,302</td><td>No</td></tr><tr><td>Basura en los espacios públicos</td><td>2,3 p.p.</td><td>2,51</td><td>0,363</td><td>No</td></tr><tr><td>Vio trabajar a las Fuerzas Armadas</td><td>2,0 p.p.</td><td>2,61</td><td>0,441</td><td>No</td></tr><tr><td>Daño a la propiedad pública/privada</td><td>0,4 p.p.</td><td>2,62</td><td>0,869</td><td>No</td></tr></tbody></table>
+        <div id="ame-bars" class="bar-chart"></div>
+      </div><div class="callout">Los dos factores con mayor efecto son <b>personas en situación de calle</b> (+21,1 p.p.) y <b>haber sido víctima de un delito</b> (+15,4 p.p.): lo que se ve en el espacio público pesa más que el delito sufrido. Entre las instituciones, ver trabajar a la <b>Policía Nacional</b> se asocia con 10,0 p.p. menos de inseguridad percibida y al <b>CACMQ</b> con 8,3 p.p. menos; la presencia de las <b>Fuerzas Armadas</b> no muestra un efecto distinguible de cero (+2,0 p.p.; p = 0,454). Ser hombre reduce la probabilidad en 12,7 p.p. frente a ser mujer. A igual composición, 2026 tiene 9,4 p.p. menos de probabilidad de inseguridad que 2024. La aglomeración de personas es el único fenómeno de convivencia asociado con <b>menos</b> inseguridad (−5,1 p.p.), aunque su valor p (0,047) está en el límite del umbral convencional.</div><div class="table-wrap">
+        <h4>Tabla completa de efectos marginales (modelo agrupado, N = 1.608)</h4><div id="tabla-ame"></div>
       </div></section>
-<section id="descomposicion" class="section"><div class="section-header"><h2>3. Por qué mejoró la percepción (2024 → 2026)</h2><div class="section-lead">Descomposición de la brecha de 12,4 puntos en dos partes: la que se explica por cambios en las condiciones medidas, y la que no.</div></div><div class="grid-2"><div class="chart-card">
+<section id="descomposicion" class="section"><div class="section-header"><h2>3. Por qué mejoró la percepción (2024 → 2026)</h2><div class="section-lead">Descomposición de la brecha de 12,5 puntos (65,9% → 53,4%) en dos partes: la que se explica por cambios en las condiciones medidas y la que no.</div></div><div class="grid-2"><div class="chart-card">
         <div class="chart-title">Descomposición de la brecha total</div>
         <div class="chart-subtitle">Referencia: coeficientes de 2024</div>
-        <div class="bar-chart">
-<div class="bar-row">
-          <div class="bar-label">Explicado por composición</div>
-          <div class="bar-track"><div class="bar-fill" style="width:27.649609894131444%;background:var(--green);"></div></div>
-          <div class="bar-value">27,6 p.p.</div>
-          <div class="bar-pct">3,4 p.p. de 12,4 p.p.</div>
-        </div><div class="bar-row">
-          <div class="bar-label">No explicado (cambio de relación)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:72.35039010586856%;background:var(--amber);"></div></div>
-          <div class="bar-value">72,4 p.p.</div>
-          <div class="bar-pct">9,0 p.p. de 12,4 p.p.</div>
-        </div>
-        </div>
+        <div id="dec-24" class="bar-chart"></div>
       </div><div class="chart-card">
         <div class="chart-title">Descomposición de la brecha total</div>
         <div class="chart-subtitle">Referencia: coeficientes de 2026 (chequeo de robustez)</div>
-        <div class="bar-chart">
-<div class="bar-row">
-          <div class="bar-label">Explicado por composición</div>
-          <div class="bar-track"><div class="bar-fill" style="width:22.40523475458701%;background:var(--green);"></div></div>
-          <div class="bar-value">22,4 p.p.</div>
-          <div class="bar-pct">2,8 p.p. de 12,4 p.p.</div>
-        </div><div class="bar-row">
-          <div class="bar-label">No explicado (cambio de relación)</div>
-          <div class="bar-track"><div class="bar-fill" style="width:77.594765245413%;background:var(--amber);"></div></div>
-          <div class="bar-value">77,6 p.p.</div>
-          <div class="bar-pct">9,6 p.p. de 12,4 p.p.</div>
-        </div>
-        </div>
-      </div></div><div class="callout">Con cualquiera de las dos referencias, la mayor parte de la mejora (69%-82%) no se explica por cambios en las condiciones medidas: la relación entre esas condiciones y la percepción cambió, probablemente por factores no capturados en la encuesta (presencia institucional, intervenciones puntuales, adaptación de la población).</div><div class="map-layout" style="margin-top:26px;">
+        <div id="dec-26" class="bar-chart"></div>
+      </div></div><div class="callout">Con cualquiera de las dos referencias, entre 75,3% y 76,7% de la mejora no se explica por cambios en las condiciones medidas. La estimación es imprecisa: el intervalo bootstrap del 95% para la parte explicada va de −3,6% a 50,6% (referencia 2024) y de −2,3% a 47,5% (referencia 2026). Incluye el cero y su límite superior ronda la mitad: lo que resiste la incertidumbre es que la mayor parte de la mejora, como mínimo alrededor de la mitad, no puede atribuirse a los cambios observados en victimización, convivencia o presencia institucional.</div><div class="map-layout" style="margin-top:26px;">
         <div class="chart-card">
           <div class="chart-title">Contribución de cada variable a la mejora</div>
           <div class="chart-subtitle" id="detail-subtitle">Verde = contribuye a la mejora · Naranja = juega en contra · Referencia: coeficientes de 2024</div>
@@ -376,13 +261,14 @@ body { background:var(--bg); color-scheme: light; }
             <option value="26">2026</option>
           </select>
           <ul class="diag-list" style="margin-top:16px;">
-            <li>La descomposición detallada usa una aproximación lineal (derivada en la media): la suma de las contribuciones no cierra exactamente con el total no lineal, un límite conocido de este método.</li>
-            <li>Cambiar la referencia muestra el llamado "problema del número índice": el reparto exacto entre variables depende de qué año se usa como base de comparación.</li>
+            <li>La columna derecha de cada barra muestra la prevalencia de la variable en 2024 → 2026 (muestra analítica).</li>
+            <li>La descomposición detallada usa la aproximación lineal de Yun (2004): la suma de las contribuciones no cierra exactamente con el total no lineal.</li>
+            <li>Cambiar la referencia muestra el «problema del número índice»: el reparto entre variables depende del año usado como base.</li>
           </ul>
         </div>
       </div></section>
-<section id="lectura-sustantiva" class="section"><div class="section-header"><h2>4. Lectura sustantiva</h2><div class="section-lead">Qué significan estos resultados para la gestión del sector.</div></div><div class="idea-grid"><div class="idea"><h3>La victimización no es el motor principal</h3><ul><li>En la muestra del modelo, la victimización apenas cambió entre 2024 y 2026 (32,4% → 31,9%). La mejora en percepción no viene de que haya menos víctimas.</li></ul></div><div class="idea"><h3>Las condiciones del espacio público sí mejoraron un poco</h3><ul><li>Cayó la presencia reportada de personas en situación de calle, basura, y consumo de alcohol/drogas en el espacio público. Esto explica una parte real, aunque minoritaria, de la mejora.</li></ul></div><div class="idea"><h3>Lo más grande es un cambio de relación, no de condiciones</h3><ul><li>Entre 69% y 82% de la mejora no se explica por las variables medidas: algo cambió en cómo la población traduce esas condiciones en una sensación de (in)seguridad — plausiblemente vinculado a la presencia institucional y las intervenciones del período, no capturadas aquí.</li></ul></div><div class="idea"><h3>La presencia institucional sí importa — y aumentó</h3><ul><li>Ver trabajar a la Policía Nacional y al CACMQ reduce significativamente la inseguridad percibida. Su presencia reportada subió entre 2024 y 2026 (Policía: 74,9%→81,6%; Fuerzas Armadas: 53,9%→74,2%), y ese aumento es, después de la caída en personas en situación de calle, el segundo mayor contribuyente a la mejora explicada.</li><li>La presencia de Fuerzas Armadas casi se cuadruplicó en prevalencia, pero su efecto propio sobre la percepción no es estadísticamente significativo: contribuye al punto estimado, aunque con más incertidumbre que la Policía o el CACMQ.</li></ul></div></div></section>
-<section id="notas" class="section"><div class="section-header"><h2>5. Notas metodológicas y limitaciones</h2><div class="section-lead">Alcance y límites del ejercicio, para su uso correcto en la toma de decisiones.</div></div><div class="bullet-card"><h4 style="margin:0 0 10px;color:var(--blue);font-size:15px;">Limitaciones</h4><ul><li>Es una comparación de corte transversal repetido (dos fotos, 2024 y 2026), no un panel de los mismos individuos: no hay identificación causal fuerte, solo asociación.</li><li>La presencia institucional es percibida y potencialmente endógena: si las instituciones se despliegan más donde la inseguridad es mayor, el efecto estimado puede subestimar (o distorsionar el signo de) su verdadero impacto — un problema clásico de causalidad inversa que este modelo no resuelve.</li><li>El modelo usa el mínimo común de variables entre ambas olas. Factores que sí cambiaron y podrían explicar más de la mejora (satisfacción con brigadas de seguridad, cambios de hábito, control del comercio informal) no existían en 2024 y no pudieron incluirse.</li><li>La descomposición detallada por variable usa una aproximación lineal (derivada en el punto medio); es una lectura orientativa de magnitud y dirección, no una partición exacta.</li><li>El resultado 'no explicado' es una caja negra: agrupa tanto factores reales omitidos (por ejemplo, calidad del servicio de las brigadas de seguridad, no solo su presencia) como posible error de especificación del modelo.</li><li>Los tres actores se agrupan en un solo modelo (con variable de control por tipo de actor). No se estimó heterogeneidad de efectos por actor; sería un desarrollo natural si se quiere profundizar.</li></ul></div></section>
+<section id="lectura-sustantiva" class="section"><div class="section-header"><h2>4. Lectura sustantiva</h2><div class="section-lead">Qué significan estos resultados para la gestión del sector.</div></div><div class="idea-grid"><div class="idea"><h3>La percepción mejora sin una caída duradera del delito</h3><ul><li>En la muestra del modelo, la victimización no bajó entre 2024 y 2026 (32,4% → 33,0%). La mejora en percepción no viene de que haya menos víctimas.</li></ul></div><div class="idea"><h3>La situación de calle es el único motor robusto</h3><ul><li>Su presencia reportada bajó de 93,3% a 86,2% y aporta entre +1,51 y +1,89 p.p. a la mejora: es la única contribución individual que se distingue de cero con ambas referencias.</li><li>Menos basura, consumo de drogas, fauna urbana y consumo de alcohol también suman, con un orden que cambia según la referencia.</li></ul></div><div class="idea"><h3>Lo más grande es un cambio de relación, no de condiciones</h3><ul><li>Entre 75% y 77% de la mejora no se explica por las variables medidas: a igual exposición, victimización y presencia institucional, la población se sentía menos insegura en 2026. El estudio no permite establecer por qué; el componente no explicado agrupa factores omitidos y posible error de especificación.</li></ul></div><div class="idea"><h3>Policía y CACMQ: asociación no es explicación del cambio</h3><ul><li>Ver trabajar a la Policía Nacional y al CACMQ se asocia con menos inseguridad. La presencia policial percibida subió (74,9% → 81,5%) y aporta +0,50 y +0,97 p.p. (puesto 6 y 4), significativo solo con la referencia 2026.</li><li>El CACMQ no aporta al cambio (−0,09 y −0,12 p.p.) porque su cobertura percibida ya era alta y no varió (88,5% → 87,4%).</li></ul></div><div class="idea"><h3>Fuerzas Armadas: más presencia, sin beneficio claro</h3><ul><li>Es el mayor cambio de composición del modelo (53,9% → 74,1%), pero su relación con la percepción se invierte entre olas (β = −0,20 en 2024; +0,35 en 2026). Su aporte es +0,90 p.p. con la referencia 2024 y −1,73 p.p. con la de 2026; ninguna estimación es concluyente.</li></ul></div><div class="idea"><h3>Factores que restaron mejora</h3><ul><li>Más peleas o riñas reportadas (69,3% → 73,5%) y menos aglomeración de personas (66,3% → 56,3%), que por su asociación protectora resta en lugar de sumar.</li></ul></div></div></section>
+<section id="notas" class="section"><div class="section-header"><h2>5. Notas metodológicas y limitaciones</h2><div class="section-lead">Alcance y límites del ejercicio, para su uso correcto en la toma de decisiones.</div></div><div class="bullet-card"><h4 style="margin:0 0 10px;color:var(--blue);font-size:15px;">Limitaciones</h4><ul><li>Es una comparación de corte transversal repetido (2024 y 2026), no un panel de los mismos individuos: los resultados son asociaciones, no efectos causales.</li><li>La presencia institucional es percibida y potencialmente endógena: si las instituciones se despliegan más donde la inseguridad es mayor, o si quienes se sienten más inseguros prestan más atención a su presencia, los coeficientes pueden estar sesgados en cualquier dirección.</li><li>El ajuste es moderado (pseudo-R² = 0,137): gran parte de la variación individual depende de factores no observados.</li><li>El modelo usa el mínimo común de variables entre ambas olas. Factores que sí cambiaron y podrían explicar más de la mejora (satisfacción con las brigadas de seguridad, cambios de hábito, control del comercio informal) no existían en 2024 y no pudieron incluirse.</li><li>La descomposición por variable usa una aproximación lineal; es una lectura orientativa de magnitud y dirección, no una partición exacta. La precisión se evaluó con un bootstrap de 300 réplicas (300 exitosas), con semilla fija.</li><li>Los tres actores se agrupan en un solo modelo, con variable de control por tipo de actor. No se estimó heterogeneidad de efectos por actor.</li></ul></div></section>
 
 
 <div class="footer"><div class="wrap footer-inner">
@@ -393,42 +279,85 @@ body { background:var(--bg); color-scheme: light; }
   </div>
 </div></div>
 
+<script id="app-data" type="application/json">{"meta": {"base": "Base LCCA (base unificada OMSCGR, 261030)", "olas": [2024, 2025, 2026]}, "conciliacion": {"filas_brutas": 2449, "filas_base": 2449, "encuestas_por_ola": {"2024": 818, "2025": 775, "2026": 856}, "encuestas_2024_2026": 1674, "n_analitico": 1608, "n_analitico_por_ola": {"2024": 766, "2026": 842}, "exclusiones": 66}, "trayectorias": [{"actor": "Población flotante", "clave": "flotante", "inseguro": [59.693877551020414, 51.53061224489795, 53.57142857142857], "victima": [15.051020408163266, 16.071428571428573, 26.02040816326531]}, {"actor": "Locales comerciales", "clave": "locales", "inseguro": [72.57142857142857, 62.17105263157895, 54.891304347826086], "victima": [50.0, 39.14473684210527, 36.95652173913043]}, {"actor": "Comercio autónomo", "clave": "autonomo", "inseguro": [72.36842105263158, 55.69620253164557, 48.95833333333333], "victima": [51.31578947368421, 40.50632911392405, 45.83333333333333]}, {"actor": "Total Centro Histórico", "clave": "total", "inseguro": [66.38141809290954, 56.12903225806451, 53.62149532710281], "victima": [33.374083129584356, 27.612903225806452, 32.94392523364486]}], "muestra_analitica": {"inseguro_2024": 65.92689295039165, "inseguro_2026": 53.44418052256532, "victima_2024": 32.375979112271544, "victima_2026": 33.0166270783848}, "modelo": {"n": 1608, "pseudo_r2": 0.13651207864312676}, "ame": [{"var": "cc_situacion_calle", "label": "Personas en situación de calle", "ame_pp": 21.05526454508773, "ee_pp": 3.9914551864796968, "p": 1.3269472117138555e-07}, {"var": "victima", "label": "Haber sido víctima de un delito", "ame_pp": 15.368091491795473, "ee_pp": 2.4793032271424584, "p": 5.698475807546856e-10}, {"var": "hombre", "label": "Ser hombre (vs. mujer)", "ame_pp": -12.657618991770288, "ee_pp": 2.194865600825306, "p": 8.073233423922979e-09}, {"var": "vio_policia", "label": "Vio trabajar a la Policía Nacional", "ame_pp": -10.040557361409851, "ee_pp": 3.1708773747763286, "p": 0.0015428967003945607}, {"var": "cc_drogas", "label": "Consumo de drogas en el espacio público", "ame_pp": 9.974168147622935, "ee_pp": 2.652608849042549, "p": 0.00016982149010256895}, {"var": "anio2026", "label": "Año 2026 (vs. 2024, a igual composición)", "ame_pp": -9.361026353479401, "ee_pp": 2.35228143753615, "p": 6.904525040536597e-05}, {"var": "vio_cacmq", "label": "Vio trabajar al CACMQ", "ame_pp": -8.252853040261837, "ee_pp": 3.7164783278188307, "p": 0.026377313112204682}, {"var": "cc_alcohol", "label": "Consumo de alcohol en el espacio público", "ame_pp": 8.2402561306909, "ee_pp": 2.9161171039210796, "p": 0.004716813294001035}, {"var": "cc_peleas", "label": "Peleas o riñas en el espacio público", "ame_pp": 8.164303444570974, "ee_pp": 2.7083514296138453, "p": 0.0025741008514575327}, {"var": "actor_flotante", "label": "Ser población flotante (vs. comercio autónomo)", "ame_pp": 7.122652849728156, "ee_pp": 4.123343325276013, "p": 0.08409630375509969}, {"var": "actor_locales", "label": "Ser local comercial (vs. comercio autónomo)", "ame_pp": 5.190273098719225, "ee_pp": 4.1213903550423865, "p": 0.20790392719846906}, {"var": "cc_aglomeracion", "label": "Aglomeración de personas", "ame_pp": -5.133104374533977, "ee_pp": 2.5831912733212103, "p": 0.046909386407725184}, {"var": "cc_ruido", "label": "Ruidos molestos", "ame_pp": 4.161267298232283, "ee_pp": 2.448059158697098, "p": 0.08916422121601685}, {"var": "cc_fauna_urbana", "label": "Fauna urbana (animales sin hogar)", "ame_pp": 4.035322359189864, "ee_pp": 2.5086112782225984, "p": 0.10770642846435667}, {"var": "cc_basura", "label": "Basura en los espacios públicos", "ame_pp": 2.7907164206939448, "ee_pp": 2.499594382650282, "p": 0.2642219836584909}, {"var": "vio_ffaa", "label": "Vio trabajar a las Fuerzas Armadas", "ame_pp": 1.9680470648184745, "ee_pp": 2.628372218503173, "p": 0.45399566124630175}, {"var": "ferias", "label": "Haber presenciado ferias gastronómicas/culturales", "ame_pp": -1.9262891260447916, "ee_pp": 2.6380543951101028, "p": 0.46527215745849604}, {"var": "cc_danio_propiedad", "label": "Daño a la propiedad pública/privada", "ame_pp": 0.4929820257621034, "ee_pp": 2.6160444389986752, "p": 0.8505273677645304}], "descomposicion": {"p24": 65.92689295039163, "p26": 53.44418052256533, "brecha_pp": 12.482712427826304, "ref24": {"explicado_pp": 3.0798810166190904, "noexpl_pp": 9.402831411207213, "explicado_pct": 24.673171271281223, "noexpl_pct": 75.32682872871878}, "ref26": {"explicado_pp": 2.9080408579131634, "noexpl_pp": 9.57467156991314, "explicado_pct": 23.296546121102622, "noexpl_pct": 76.70345387889738}}, "detalle": {"24": [{"var": "cc_aglomeracion", "label": "Aglomeración de personas", "val": -1.0877745519979671, "orden": 17, "prev_2024": 66.31853785900783, "prev_2026": 56.294536817102134}, {"var": "cc_peleas", "label": "Peleas o riñas en el espacio público", "val": -0.5564345541457141, "orden": 16, "prev_2024": 69.32114882506526, "prev_2026": 73.51543942992875}, {"var": "cc_ruido", "label": "Ruidos molestos", "val": -0.19994261591206614, "orden": 15, "prev_2024": 52.34986945169713, "prev_2026": 54.27553444180523}, {"var": "hombre", "label": "Ser hombre (vs. mujer)", "val": -0.17780575652195713, "orden": 14, "prev_2024": 45.300261096605745, "prev_2026": 44.53681710213777}, {"var": "victima", "label": "Haber sido víctima de un delito", "val": -0.12532664038124225, "orden": 13, "prev_2024": 32.375979112271544, "prev_2026": 33.0166270783848}, {"var": "vio_cacmq", "label": "Vio trabajar al CACMQ", "val": -0.09282129667411104, "orden": 12, "prev_2024": 88.51174934725849, "prev_2026": 87.41092636579573}, {"var": "ferias", "label": "Haber presenciado ferias gastronómicas/culturales", "val": -0.007309691602335116, "orden": 11, "prev_2024": 78.3289817232376, "prev_2026": 72.92161520190024}, {"var": "actor_locales", "label": "Ser local comercial (vs. comercio autónomo)", "val": 0.08777424929555853, "orden": 10, "prev_2024": 45.039164490861616, "prev_2026": 43.111638954869356}, {"var": "actor_flotante", "label": "Ser población flotante (vs. comercio autónomo)", "val": 0.25774626130285105, "orden": 9, "prev_2024": 49.21671018276763, "prev_2026": 45.605700712589076}, {"var": "cc_danio_propiedad", "label": "Daño a la propiedad pública/privada", "val": 0.3054459183900839, "orden": 8, "prev_2024": 42.42819843342037, "prev_2026": 36.57957244655582}, {"var": "cc_fauna_urbana", "label": "Fauna urbana (animales sin hogar)", "val": 0.4452556419035288, "orden": 7, "prev_2024": 62.14099216710183, "prev_2026": 46.080760095011875}, {"var": "vio_policia", "label": "Vio trabajar a la Policía Nacional", "val": 0.49808737165144945, "orden": 6, "prev_2024": 74.93472584856397, "prev_2026": 81.47268408551069}, {"var": "cc_alcohol", "label": "Consumo de alcohol en el espacio público", "val": 0.510601929574729, "orden": 5, "prev_2024": 75.06527415143603, "prev_2026": 69.83372921615202}, {"var": "cc_drogas", "label": "Consumo de drogas en el espacio público", "val": 0.7601654783840092, "orden": 4, "prev_2024": 62.271540469973885, "prev_2026": 52.96912114014252}, {"var": "cc_basura", "label": "Basura en los espacios públicos", "val": 0.8809418898872811, "orden": 3, "prev_2024": 71.01827676240208, "prev_2026": 55.463182897862225}, {"var": "vio_ffaa", "label": "Vio trabajar a las Fuerzas Armadas", "val": 0.9025526641419682, "orden": 2, "prev_2024": 53.916449086161876, "prev_2026": 74.10926365795724}, {"var": "cc_situacion_calle", "label": "Personas en situación de calle", "val": 1.5142097051964842, "orden": 1, "prev_2024": 93.34203655352479, "prev_2026": 86.22327790973871}], "26": [{"var": "vio_ffaa", "label": "Vio trabajar a las Fuerzas Armadas", "val": -1.7327055007844607, "orden": 17, "prev_2024": 53.916449086161876, "prev_2026": 74.10926365795724}, {"var": "cc_aglomeracion", "label": "Aglomeración de personas", "val": -0.28259914461840036, "orden": 16, "prev_2024": 66.31853785900783, "prev_2026": 56.294536817102134}, {"var": "cc_peleas", "label": "Peleas o riñas en el espacio público", "val": -0.2538896448030365, "orden": 15, "prev_2024": 69.32114882506526, "prev_2026": 73.51543942992875}, {"var": "cc_danio_propiedad", "label": "Daño a la propiedad pública/privada", "val": -0.2358090687744327, "orden": 14, "prev_2024": 42.42819843342037, "prev_2026": 36.57957244655582}, {"var": "ferias", "label": "Haber presenciado ferias gastronómicas/culturales", "val": -0.22910147878877565, "orden": 13, "prev_2024": 78.3289817232376, "prev_2026": 72.92161520190024}, {"var": "vio_cacmq", "label": "Vio trabajar al CACMQ", "val": -0.11885393094236481, "orden": 12, "prev_2024": 88.51174934725849, "prev_2026": 87.41092636579573}, {"var": "victima", "label": "Haber sido víctima de un delito", "val": -0.11744756937030784, "orden": 11, "prev_2024": 32.375979112271544, "prev_2026": 33.0166270783848}, {"var": "hombre", "label": "Ser hombre (vs. mujer)", "val": -0.0644660007827719, "orden": 10, "prev_2024": 45.300261096605745, "prev_2026": 44.53681710213777}, {"var": "cc_ruido", "label": "Ruidos molestos", "val": -0.008279850096518581, "orden": 9, "prev_2024": 52.34986945169713, "prev_2026": 54.27553444180523}, {"var": "actor_locales", "label": "Ser local comercial (vs. comercio autónomo)", "val": 0.09974822085962241, "orden": 8, "prev_2024": 45.039164490861616, "prev_2026": 43.111638954869356}, {"var": "actor_flotante", "label": "Ser población flotante (vs. comercio autónomo)", "val": 0.30069087107100395, "orden": 7, "prev_2024": 49.21671018276763, "prev_2026": 45.605700712589076}, {"var": "cc_alcohol", "label": "Consumo de alcohol en el espacio público", "val": 0.49614322678978334, "orden": 6, "prev_2024": 75.06527415143603, "prev_2026": 69.83372921615202}, {"var": "cc_basura", "label": "Basura en los espacios públicos", "val": 0.49864856713728434, "orden": 5, "prev_2024": 71.01827676240208, "prev_2026": 55.463182897862225}, {"var": "vio_policia", "label": "Vio trabajar a la Policía Nacional", "val": 0.9724971120169802, "orden": 4, "prev_2024": 74.93472584856397, "prev_2026": 81.47268408551069}, {"var": "cc_fauna_urbana", "label": "Fauna urbana (animales sin hogar)", "val": 1.092084660308528, "orden": 3, "prev_2024": 62.14099216710183, "prev_2026": 46.080760095011875}, {"var": "cc_drogas", "label": "Consumo de drogas en el espacio público", "val": 1.36355348919629, "orden": 2, "prev_2024": 62.271540469973885, "prev_2026": 52.96912114014252}, {"var": "cc_situacion_calle", "label": "Personas en situación de calle", "val": 1.8945498650559711, "orden": 1, "prev_2024": 93.34203655352479, "prev_2026": 86.22327790973871}]}, "instituciones_suma": {"24": 1.3078187391193066, "26": -0.8790623197098454}, "ffaa_coef": {"b2024": -0.20384499812254836, "p2024": 0.2764522686963419, "b2026": 0.3469694534111562, "p2026": 0.07329539525310809}, "bootstrap": {"B": 300, "exitosas": 300, "brecha": {"lo": 7.751801628597826, "med": 12.70396234255131, "hi": 17.678713184448323}, "pct_expl_24": {"lo": -3.5811351058994934, "med": 23.881793186806, "hi": 50.633474995249294}, "pct_expl_26": {"lo": -2.3053863606175558, "med": 21.626832280700864, "hi": 47.547774968081846}, "ffaa_24": {"lo": -0.5162453988929836, "med": 0.8698855454246388, "hi": 2.681675112216526}, "ffaa_26": {"lo": -3.715183672751919, "med": -1.7063668158655614, "hi": 0.09336502761098377}, "policia_24": {"lo": -0.1070760349549855, "med": 0.48626245705322557, "hi": 1.452807787620522}, "policia_26": {"lo": 0.1700476781608339, "med": 0.9163066164036322, "hi": 2.191338528708519}, "calle_24": {"lo": 0.4022382650411163, "med": 1.4219129014410554, "hi": 2.9821510329843015}, "calle_26": {"lo": 0.892256448369822, "med": 1.9131187077330147, "hi": 3.490833066949854}}}</script>
+<script>window.APP_DATA = JSON.parse(document.getElementById('app-data').textContent);</script>
 <script>
-
-    var navLinks = document.querySelectorAll('.nav a');
-    for (var i = 0; i < navLinks.length; i++) {
-      navLinks[i].addEventListener('click', function(e){
-        e.preventDefault();
-        var id = e.currentTarget.getAttribute('data-target');
-        var el = document.getElementById(id);
-        if (el) el.scrollIntoView({behavior:'smooth'});
+(function(){
+  var A = window.APP_DATA;
+  function fm(x, d, sign) {
+    d = (d === undefined) ? 1 : d;
+    var r = Math.abs(x).toLocaleString('es-EC', {minimumFractionDigits:d, maximumFractionDigits:d});
+    if (x < 0 && Number(Math.abs(x).toFixed(d)) !== 0) return '−' + r;
+    if (sign && x > 0) return '+' + r;
+    return r;
+  }
+  function bar(label, w, color, val, pct) {
+    return '<div class="bar-row"><div class="bar-label">' + label + '</div>' +
+      '<div class="bar-track"><div class="bar-fill" style="width:' + Math.max(2, Math.min(100, w)) + '%;background:' + color + ';"></div></div>' +
+      '<div class="bar-value">' + val + '</div><div class="bar-pct">' + (pct || '') + '</div></div>';
+  }
+  var navLinks = document.querySelectorAll('.nav a');
+  for (var i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function(e){
+      e.preventDefault();
+      var el = document.getElementById(e.currentTarget.getAttribute('data-target'));
+      if (el) el.scrollIntoView({behavior:'smooth'});
+    });
+  }
+  try {
+    var h = '<table><thead><tr><th>Actor</th><th>Percepción insegura 2024 → 2025 → 2026</th><th>Cambio neto</th><th>Victimización 2024 → 2025 → 2026</th><th>Cambio neto</th></tr></thead><tbody>';
+    A.trayectorias.forEach(function(t){
+      var b = t.clave === 'total' ? ['<b>','</b>'] : ['',''];
+      h += '<tr><td>' + b[0] + t.actor + b[1] + '</td><td>' + t.inseguro.map(function(x){return fm(x)+'%';}).join(' → ') + '</td><td>' + fm(t.inseguro[2]-t.inseguro[0],1,true) + ' p.p.</td><td>' +
+        t.victima.map(function(x){return fm(x)+'%';}).join(' → ') + '</td><td>' + fm(t.victima[2]-t.victima[0],1,true) + ' p.p.</td></tr>';
+    });
+    h += '</tbody></table><p style="font-size:12px;color:var(--muted);font-weight:600;margin:10px 0 0;">Porcentaje sobre el total de encuestas de cada ola (' +
+      [2024,2025,2026].map(function(y){return A.conciliacion.encuestas_por_ola[y].toLocaleString('es-EC');}).join(', ') + '). Fuente: EVPSC-OMSCGR.</p>';
+    document.getElementById('tabla-trayectorias').innerHTML = h;
+  } catch (err) {}
+  try {
+    var items = A.ame.slice().sort(function(a,b){ return a.ame_pp - b.ame_pp; });
+    var mx = 0; items.forEach(function(r){ mx = Math.max(mx, Math.abs(r.ame_pp)); });
+    var html = '';
+    items.forEach(function(r){
+      var ns = r.p >= 0.05 ? ' (n.s.)' : '';
+      html += bar(r.label + ns, Math.abs(r.ame_pp)/mx*100, r.ame_pp >= 0 ? 'var(--orange)' : 'var(--cyan)', fm(r.ame_pp,1,true) + ' p.p.', 'p=' + fm(r.p,3));
+    });
+    document.getElementById('ame-bars').innerHTML = html;
+    var t = '<table><thead><tr><th>Variable</th><th>Efecto marginal</th><th>Error estándar</th><th>Valor p</th><th>Significativo (5%)</th></tr></thead><tbody>';
+    A.ame.forEach(function(r){
+      var st = r.p < 0.01 ? '**' : (r.p < 0.05 ? '*' : '');
+      t += '<tr><td>' + r.label + '</td><td>' + fm(r.ame_pp,1,true) + ' p.p.' + st + '</td><td>' + fm(r.ee_pp,2) + '</td><td>' + fm(r.p,3) + '</td><td>' + (r.p < 0.05 ? 'Sí' : 'No') + '</td></tr>';
+    });
+    t += '</tbody></table><p style="font-size:12px;color:var(--muted);font-weight:600;margin:10px 0 0;">N = ' + A.modelo.n.toLocaleString('es-EC') + '; pseudo-R² = ' + fm(A.modelo.pseudo_r2,3) +
+      '. Errores estándar robustos (HC1). * p &lt; 0,05; ** p &lt; 0,01.</p>';
+    document.getElementById('tabla-ame').innerHTML = t;
+  } catch (err) {}
+  try {
+    var D = A.descomposicion;
+    ['24','26'].forEach(function(ref){
+      var r = D['ref' + ref];
+      document.getElementById('dec-' + ref).innerHTML =
+        bar('Explicado por composición', r.explicado_pct, 'var(--green)', fm(r.explicado_pct) + '%', fm(r.explicado_pp) + ' p.p.') +
+        bar('No explicado (cambio de relación)', r.noexpl_pct, 'var(--amber)', fm(r.noexpl_pct) + '%', fm(r.noexpl_pp) + ' p.p.');
+    });
+  } catch (err) {}
+  function renderDetail(ref) {
+    try {
+      var items = A.detalle[ref], mx = 0, html = '';
+      items.forEach(function(it){ mx = Math.max(mx, Math.abs(it.val)); });
+      items.forEach(function(it){
+        html += bar(it.label + ' <span style="color:var(--muted);font-weight:600;">(' + fm(it.prev_2024) + '% → ' + fm(it.prev_2026) + '%)</span>',
+          Math.abs(it.val)/mx*100, it.val >= 0 ? 'var(--green)' : 'var(--orange)', fm(it.val,2,true) + ' p.p.', '#' + it.orden);
       });
-    }
-
-    var DETAIL = {"24": [{"label": "Aglomeración de personas", "val": -1.1}, {"label": "Peleas o riñas en el espacio público", "val": -0.55}, {"label": "Ruidos molestos", "val": -0.19}, {"label": "Ser hombre (vs. mujer)", "val": -0.17}, {"label": "Vio trabajar al Cuerpo de Agentes de Control Metropolitano (CACMQ)", "val": -0.09}, {"label": "Haber presenciado ferias gastronómicas/culturales", "val": -0.01}, {"label": "Ser local comercial (vs. comercio autónomo)", "val": 0.09}, {"label": "Haber sido víctima de un delito", "val": 0.1}, {"label": "Ser población flotante (vs. comercio autónomo)", "val": 0.26}, {"label": "Daño a la propiedad pública/privada", "val": 0.3}, {"label": "Fauna urbana (animales sin hogar)", "val": 0.44}, {"label": "Consumo de alcohol en el espacio público", "val": 0.5}, {"label": "Vio trabajar a la Policía Nacional", "val": 0.51}, {"label": "Consumo de drogas en el espacio público", "val": 0.76}, {"label": "Basura en los espacios públicos", "val": 0.88}, {"label": "Vio trabajar a las Fuerzas Armadas", "val": 0.91}, {"label": "Personas en situación de calle", "val": 1.52}], "26": [{"label": "Vio trabajar a las Fuerzas Armadas", "val": -1.76}, {"label": "Aglomeración de personas", "val": -0.44}, {"label": "Haber presenciado ferias gastronómicas/culturales", "val": -0.32}, {"label": "Peleas o riñas en el espacio público", "val": -0.24}, {"label": "Daño a la propiedad pública/privada", "val": -0.22}, {"label": "Vio trabajar al Cuerpo de Agentes de Control Metropolitano (CACMQ)", "val": -0.11}, {"label": "Ser hombre (vs. mujer)", "val": -0.06}, {"label": "Ruidos molestos", "val": -0.03}, {"label": "Ser local comercial (vs. comercio autónomo)", "val": 0.11}, {"label": "Haber sido víctima de un delito", "val": 0.13}, {"label": "Basura en los espacios públicos", "val": 0.35}, {"label": "Consumo de alcohol en el espacio público", "val": 0.43}, {"label": "Ser población flotante (vs. comercio autónomo)", "val": 0.43}, {"label": "Vio trabajar a la Policía Nacional", "val": 0.94}, {"label": "Fauna urbana (animales sin hogar)", "val": 1.06}, {"label": "Consumo de drogas en el espacio público", "val": 1.19}, {"label": "Personas en situación de calle", "val": 2.03}]};
-    function renderDetail(ref) {
-      try {
-        var items = DETAIL[ref];
-        var maxAbs = 0;
-        for (var i=0;i<items.length;i++) maxAbs = Math.max(maxAbs, Math.abs(items[i].val));
-        var html = '';
-        for (var i=0;i<items.length;i++) {
-          var it = items[i];
-          var w = Math.max(2, Math.min(100, Math.abs(it.val) / maxAbs * 100));
-          var color = it.val >= 0 ? 'var(--green)' : 'var(--orange)';
-          var sign = it.val >= 0 ? '+' : '';
-          html += '<div class="bar-row"><div class="bar-label">' + it.label + '</div>' +
-            '<div class="bar-track"><div class="bar-fill" style="width:' + w + '%;background:' + color + ';"></div></div>' +
-            '<div class="bar-value">' + sign + String(it.val).replace('.', ',') + ' p.p.</div><div class="bar-pct"></div></div>';
-        }
-        document.getElementById('detail-bars').innerHTML = html;
-        document.getElementById('detail-subtitle').textContent = 'Verde = contribuye a la mejora · Naranja = juega en contra · Referencia: coeficientes de 20' + ref;
-      } catch (err) {}
-    }
-    var refSelect = document.getElementById('ref-select');
-    if (refSelect) { refSelect.addEventListener('change', function(e){ renderDetail(e.target.value); }); }
-    renderDetail('24');
-
+      document.getElementById('detail-bars').innerHTML = html;
+      document.getElementById('detail-subtitle').textContent = 'Verde = contribuye a la mejora · Naranja = juega en contra · # = orden · Referencia: coeficientes de 20' + ref;
+    } catch (err) {}
+  }
+  var sel = document.getElementById('ref-select');
+  if (sel) sel.addEventListener('change', function(e){ renderDetail(e.target.value); });
+  renderDetail('24');
+})();
 </script>
 </body>
 </html>
